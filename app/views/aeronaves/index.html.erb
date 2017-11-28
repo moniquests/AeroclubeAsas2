@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista Aeronaves</h1>
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Numerotripulantes</th>
+      <th>Tamanho</th>
+      <th>Numero</th>
+      <th>Chassi</th>
+      <th>Quantidadehorasvoo</th>
+      <th>Quantidademotor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aeronaves.each do |aeronafe| %>
+      <tr>
+        <td><%= aeronafe.nome %></td>
+        <td><%= aeronafe.numeroTripulantes %></td>
+        <td><%= aeronafe.tamanho %></td>
+        <td><%= aeronafe.numero %></td>
+        <td><%= aeronafe.chassi %></td>
+        <td><%= aeronafe.quantidadeHorasVoo %></td>
+        <td><%= aeronafe.quantidadeMotor %></td>
+        <td><%= link_to 'Show', aeronafe %></td>
+        <td><%= link_to 'Edit', edit_aeronafe_path(aeronafe) %></td>
+        <td><%= link_to 'Destroy', aeronafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aeronafe', new_aeronafe_path %>

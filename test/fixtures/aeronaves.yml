@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  numeroTripulantes: MyString
+  tamanho: MyString
+  numero: MyString
+  chassi: MyString
+  quantidadeHorasVoo: MyString
+  quantidadeMotor: MyString
+
+two:
+  nome: MyString
+  numeroTripulantes: MyString
+  tamanho: MyString
+  numero: MyString
+  chassi: MyString
+  quantidadeHorasVoo: MyString
+  quantidadeMotor: MyString

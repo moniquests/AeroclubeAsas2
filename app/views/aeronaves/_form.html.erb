@@ -1,0 +1,45 @@
+<%= form_for(@aeronafe) do |f| %>
+  <% if @aeronafe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aeronafe.errors.count, "error") %> prohibited this aeronafe from being saved:</h2>
+
+      <ul>
+      <% @aeronafe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :numeroTripulantes %><br>
+    <%= f.text_field :numeroTripulantes %>
+  </div>
+  <div class="field">
+    <%= f.label :tamanho %><br>
+    <%= f.text_field :tamanho %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :chassi %><br>
+    <%= f.text_field :chassi %>
+  </div>
+  <div class="field">
+    <%= f.label :quantidadeHorasVoo %><br>
+    <%= f.text_field :quantidadeHorasVoo %>
+  </div>
+  <div class="field">
+    <%= f.label :quantidadeMotor %><br>
+    <%= f.text_field :quantidadeMotor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
