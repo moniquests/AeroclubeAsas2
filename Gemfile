@@ -48,3 +48,8 @@ end
   gem 'devise'
   gem 'twitter-bootstrap-rails'
   gem 'simple_form'
+  
+  group :production do 
+cd	gem 'pg'
+end
+
