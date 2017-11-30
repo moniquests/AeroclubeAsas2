@@ -50,6 +50,6 @@ end
   gem 'simple_form'
   
   group :production do 
-cd	gem 'pg'
+	gem 'pg'
 end
 
